@@ -4,7 +4,10 @@ const segundaOpcion = 'deja la gaseosa y trae el resto'
 const terceraOpcion = 'compra lo que te alcance'
 const cuartaOpcion = 'que hiciste con la plata que deje para las compras?'
 
-
+while(dineroTotal >= 100 && dineroTotal <200){
+    alert('usa la plata que deje para las compras')
+    dineroTotal = parseInt(prompt('Cuanto dinero tienes?'))
+}
 if (dineroTotal >=500) {
     alert(primerOpcion)
     alert('te sobran ' + (dineroTotal - 500))
